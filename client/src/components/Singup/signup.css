@@ -1,0 +1,86 @@
+body {
+	background-color: #344a72;
+	font-family: "Roboto", sans-serif;
+  }
+  
+  .signup_container {
+	width: 430px;
+	height: 550px;
+	margin: auto;
+	background-color: rgb(226, 236, 236);
+	border-radius: 3px;
+  }
+
+  
+  .signup-title {
+	text-align: center;
+	padding-top: 15px;
+  }
+  
+ .signup-text {
+	text-align: center;
+  }
+  
+  .signup_form {
+	width: 300px;
+margin: 0px auto;
+  }
+  
+  .signup-form-label {
+	display: flex;
+	margin-top: 20px;
+	font-size: 18px;
+  }
+  
+ .signup_form_input {
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border: 1px solid gray;
+	border-radius: 6px;
+	outline: none;
+  }
+ .signup_form_button{
+	width: 320px;
+	height: 35px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #49c1a2;
+	color: white;
+	font-size: 18px;
+  }
+  p {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 15px;
+  }
+  .para-2 {
+	text-align: center;
+	color: white;
+	font-size: 15px;
+
+  }
+
+  
+  .login_button{
+	width: 90px;
+	height: 35px;
+	margin-left: 10px;
+	border: none;
+	background-color: #4628f1;
+	color: white;
+	font-size: 18px;
+	border-radius: 5px;
+
+  }
+
+  .signup_footer{
+	  border: none;
+	  background-color: rgb(252, 80, 13);
+	  color: black;
+	  width: 430px;
+	height: 100px;
+	margin: auto;
+  }
+  

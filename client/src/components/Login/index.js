@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import styles from "./styles.module.css";
+import './login.css'
 
 const Login = () => {
 	const [data, setData] = useState({ email: "", password: "" });
@@ -30,11 +30,16 @@ const Login = () => {
 	};
 
 	return (
-		<div className={styles.login_container}>
-			<div className={styles.login_form_container}>
-				<div className={styles.left}>
-					<form className={styles.form_container} onSubmit={handleSubmit}>
-						<h1>Login to Your Account</h1>
+		<div>
+		<div className='login_container'>
+
+<h1 className="login-title">Log In</h1>
+        <h3 className="login-text">Login to Your Account</h3>
+
+			
+					<form className="login_form"  onSubmit={handleSubmit}>
+
+						<label className="login-form-label">email</label>
 						<input
 							type="email"
 							placeholder="Email"
@@ -42,8 +47,9 @@ const Login = () => {
 							onChange={handleChange}
 							value={data.email}
 							required
-							className={styles.input}
+							className="login_form_input"
 						/>
+						<label className="login-form-label">Password</label>
 						<input
 							type="password"
 							placeholder="Password"
@@ -51,24 +57,41 @@ const Login = () => {
 							onChange={handleChange}
 							value={data.password}
 							required
-							className={styles.input}
+							className="login_form_input"
 						/>
-						{error && <div className={styles.error_msg}>{error}</div>}
-						<button type="submit" className={styles.green_btn}>
-							Sing In
-						</button>
+
+
+						{error && <div className="error_msg">{error}</div>}
+						
+						<button type="submit" className="login_form_button">
+            login
+          </button>
+
 					</form>
-				</div>
-				<div className={styles.right}>
-					<h1>New Here ?</h1>
+
+
+					<p>
+          By clicking the Sign Up button,you agree to our <br />
+          <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+        </p>
+
+      </div>
+
+
+				<div className="login_footer">
+					<p className="para-2">
+					{" "}
+					Create an account.
 					<Link to="/signup">
-						<button type="button" className={styles.white_btn}>
-							Sing Up
-						</button>
-					</Link>
-				</div>
-			</div>
-		</div>
+									<button type="button"  className="signup_button">
+										Sing Up
+									</button>
+								</Link>
+					</p>
+					</div>
+    </div>
+
+
 	);
 };
 
